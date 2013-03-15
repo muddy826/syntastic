@@ -105,6 +105,7 @@ if !exists("g:syntastic_loc_list_height")
     let g:syntastic_loc_list_height = 10
 endif
 
+source <sfile>:h/syntastic/registry.vim
 let s:registry = g:SyntasticRegistry.Instance()
 
 function! s:CompleteCheckerName(argLead, cmdLine, cursorPos)
